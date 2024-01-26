@@ -1,0 +1,169 @@
+{
+  "info": {
+    "name": "Daily Diet",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Meals",
+      "item": [
+        {
+          "name": "Create Meal",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/meal",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Sanduice\",\n  \"is_diet\": false,\n  \"description\": \"Sai com os amigos\",\n  \"ate_at\": \"2024-01-22T22:30:00.000Z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Edit Meal",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{base_url}}/meal/2",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rodizio de Pizza\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get Meal",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/meal/1",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rodizio de Pizza\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete Meal",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/meal/1",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rodizio de Pizza\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Fetch Meals",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/meal",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rodizio de Pizza\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login User",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"teste@email.com\",\n  \"password\": \"senha123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Register User",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Teste\",\n  \"email\": \"teste@email.com\",\n  \"password\": \"senha123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Logout User",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/logout",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"teste@email.com\",\n  \"password\": \"senha123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
